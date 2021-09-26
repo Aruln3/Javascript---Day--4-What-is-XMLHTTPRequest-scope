@@ -51,10 +51,10 @@ const getblog = ()=>{
     xhreq.onload=()=>{
      const blogs =  xhreq.response;
       for(let blog of blogs){
-      console.log(blog.region);
-      console.log(blog.subregion);
-      console.log(blog.population);
-      console.log(blog.name);
+        console.log(blog.name);
+        console.log(blog.region);
+        console.log(blog.subregion);
+        console.log(blog.population);
     }
   };
   xhreq.send();
